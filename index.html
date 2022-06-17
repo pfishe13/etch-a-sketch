@@ -9,20 +9,29 @@
     <script src="index.js" defer></script>
 </head>
 <body>
+    <div class="main">
     <div class="left-side-content">
         <h1>Etch-a-Sketch</h1>
         <h3>Choose Dimension:</h3>
-        <button onClick=`${fillGrid(60)}` class="btn">Small
-        </button>
-        <button onClick=`${fillGrid(25)}` class="btn">Medium
-        </button>
-        <button onClick=`${fillGrid(10)}` class="btn">Large
-        </button>
+        <div>
+            <button onClick=`${fillGrid(50)}` class="btn">
+                Small
+            </button>
+            <button onClick=`${fillGrid(25)}` class="btn">
+                Medium
+            </button>
+            <button onClick=`${fillGrid(10)}` class="btn">
+                Large
+            </button>
+        </div>
         <h3>Choose Color:</h3>
-        <input type="color" id="body" name="body"
-            value="#f6b73c">
+        <input type="color" id="colorPicker" name="body"
+            value="black">
+        <div><button onClick=`${resetColor()}`>Reset</button></div>
     </div>
     <div id="main-container">
     </div>
+    </div>
+    <footer>Made by Parker Fisher</footer>
 </body>
 </html>
