@@ -46,8 +46,8 @@ button:hover {
 }
 
 #main-container {
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
   background-color: #d64045;
   border-radius: 30px;
   display: flex;
